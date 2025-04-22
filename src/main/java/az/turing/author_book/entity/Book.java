@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="book")
+@Table(name = "book")
 public class Book {
 
     @Id
@@ -21,7 +21,5 @@ public class Book {
 
     @Column(nullable = false)
     private String isbn;
-
-
 
 }
