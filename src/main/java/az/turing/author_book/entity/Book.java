@@ -1,6 +1,7 @@
 package az.turing.author_book.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -27,7 +28,7 @@ public class Book {
 
     @ManyToOne
     @JoinColumn(name="author_id")
-    @JsonBackReference
+    @JsonIgnoreProperties(value = {"books"})
     private Author author;
 
 }

@@ -1,5 +1,6 @@
 package az.turing.author_book.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -26,6 +27,6 @@ public class Author {
     private String email;
 
     @OneToMany(mappedBy = "author",cascade = CascadeType.ALL)
-    @JsonManagedReference
+    @JsonIgnore
     private List<Book> books;
 }
