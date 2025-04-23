@@ -2,6 +2,7 @@ package az.turing.author_book.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,7 +22,7 @@ public class Book {
     private String title;
 
     @Column(nullable = false,length = 13)
-//    @Size(min=13,max=13)
+    @Size(min=13,max=13)
     private String isbn;
 
     @ManyToOne
