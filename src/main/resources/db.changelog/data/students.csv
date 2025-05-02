@@ -1,0 +1,4 @@
+id,name,surname,email,phone_number,course_id,created_at,updated_at
+1,John,Doe,john.doe@example.com,+1234567890,1,2025-04-25 10:00:00,2025-04-25 10:00:00
+2,Jane,Smith,jane.smith@example.com,+1234567891,2,2025-04-25 10:05:00,2025-04-25 10:05:00
+3,Emily,Jones,emily.jones@example.com,+1234567892,3,2025-04-25 10:10:00,2025-04-25 10:10:00

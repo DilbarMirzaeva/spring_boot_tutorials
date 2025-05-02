@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: turing
+      changes:
+        - loadData:
+            file: classpath:db.changelog/data/courses.csv
+            tableName: courses
+            separator: ","
+            encoding: UTF-8
+            columns:
+              - column:
+                  name: id
+                  type: NUMERIC
+              - column:
+                  name: name
+                  type: STRING
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+              - column:
+                  name: updated_at
+                  type: TIMESTAMP

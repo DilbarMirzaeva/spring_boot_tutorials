@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: turing
+      changes:
+        - loadData:
+            file: classpath:db.changelog/data/students.csv
+            tableName: students
+            separator: ","
+            encoding: UTF-8
+            columns:
+              - column:
+                  name: id
+                  type: NUMERIC
+              - column:
+                  name: name
+                  type: STRING
+              - column:
+                  name: surname
+                  type: STRING
+              - column:
+                  name: email
+                  type: STRING
+              - column:
+                  name: phone_number
+                  type: STRING
+              - column:
+                  name: course_id
+                  type: NUMERIC
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+              - column:
+                  name: updated_at
+                  type: TIMESTAMP

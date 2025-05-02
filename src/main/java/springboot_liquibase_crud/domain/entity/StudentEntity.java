@@ -34,7 +34,7 @@ public class StudentEntity extends BaseEntity{
     private String phoneNumber;
 
     @ManyToOne
-    @JoinColumn(name = "couse_id")
+    @JoinColumn(name = "course_id")
     private CourseEntity course;
 
 }
