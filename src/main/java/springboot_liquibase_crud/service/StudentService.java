@@ -18,6 +18,7 @@ public class StudentService {
 
     public void save(StudentDto studentDto) {
        StudentEntity studentEntity= studentMapper.toEntity(studentDto);
+
         studentRepository.save(studentEntity);
     }
 

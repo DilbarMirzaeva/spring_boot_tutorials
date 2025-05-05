@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringJdbcTemplateExampleApplication2 {
+public class SpringLiquibaseApplication2 {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringJdbcTemplateExampleApplication2.class, args);
+        SpringApplication.run(SpringLiquibaseApplication2.class, args);
     }
 
 }

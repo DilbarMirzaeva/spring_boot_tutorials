@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/author_book
+    url: jdbc:postgresql://localhost:5432/course-student
     username: postgres
     password: Dlbarmirze5678.
   jpa:
@@ -18,3 +18,5 @@ spring:
     level:
       liquibase: DEBUG
 
+server:
+  port: 8081

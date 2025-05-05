@@ -13,6 +13,5 @@ public class StudentDto {
     private String surname;
     private String email;
     private String phoneNumber;
-    private Long courseId;
-    private String courseName;
+    private CourseDto course;
 }

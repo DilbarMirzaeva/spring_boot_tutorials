@@ -33,7 +33,7 @@ public class StudentEntity extends BaseEntity{
     @Column(name = "phone_number",nullable = false,unique = true)
     private String phoneNumber;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "course_id")
     private CourseEntity course;
 
