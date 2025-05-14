@@ -1,6 +1,7 @@
 package springboot_liquibase_crud.service;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import springboot_liquibase_crud.domain.entity.CourseEntity;
 import springboot_liquibase_crud.domain.repository.CourseRepository;
@@ -9,6 +10,7 @@ import springboot_liquibase_crud.model.CourseDto;
 
 import java.util.List;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class CourseService {
@@ -18,6 +20,7 @@ public class CourseService {
 
     public void save(CourseDto courseDto) {
         repository.save(courseMapper.toEntity(courseDto));
+
     }
 
     public void deleteById(Long id){
