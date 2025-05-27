@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
 import java.util.List;
@@ -32,6 +33,7 @@ public class MovieEntity {
     @Enumerated(EnumType.STRING)
     private MovieGenre movieGenre;
 
+    @ToString.Exclude
     @Column(name="director",nullable = false)
     private String director;
 

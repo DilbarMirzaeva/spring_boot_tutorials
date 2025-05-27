@@ -21,7 +21,7 @@ public class CreateMovieRequest {
     private String description;
 
     @Enumerated(EnumType.STRING)
-    private MovieGenre genre;
+    private MovieGenre movieGenre;
 
     @NotBlank
     private String director;

@@ -1,7 +1,6 @@
-package az.turing.movie_app.model.response;
+package az.turing.movie_app.model.request;
 
 import az.turing.movie_app.domain.enums.MovieGenre;
-import az.turing.movie_app.domain.enums.Status;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.validation.constraints.NotBlank;
@@ -9,15 +8,12 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class MovieResponse {
-
-    private Long id;
-
+public class UpdateMovieRequest {
+    @NotBlank
     private String name;
 
     @NotBlank
@@ -27,12 +23,9 @@ public class MovieResponse {
     private MovieGenre movieGenre;
 
     @NotBlank
-    @ToString.Exclude
     private String director;
 
     @NotNull
     private Integer duration;
 
-    @Enumerated(EnumType.STRING)
-    private Status status;
 }
